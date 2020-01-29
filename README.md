@@ -21,13 +21,13 @@ Current Api goes as follows:
 1. GET request requires node id as path variable - returns node with such id.
 2. DELETE request requires node id as path variable - deletes node with all it's entries.
 3. PUT request requires node id as path variable and modified parent node - updates whole network.
-#### For */network/{id}/entries" :
+#### For */network/{id}/entries* address :
 1. GET request requires node id as path variable - returns list of node entries.
-#### For */network/{id}/entry" :
+#### For */network/{id}/entry* address :
 1. DELETE request requires node id as path variable - deletes node with all it's entries.
 2. PUT request requires modified node and node id as path variable - updates single node. Node's entries and id are not updated.
-#### For */network/{id}/add-node" :
+#### For */network/{id}/add-node* address :
 1. PUT request requires node id as path variable and list of entries. Adds entries to the node with given id.
-#### For */network/{id}/verify" :
+#### For */network/{id}/verify* address :
 1. GET request requires node id as path variable - Verifies that network is in consistent state (hierarchy is valid, no id's are duplicated).
 Returns boolean value (true - network is valid, false - network is non-valid).
